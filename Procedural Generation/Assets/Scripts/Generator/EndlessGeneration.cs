@@ -51,7 +51,7 @@ public class EndlessGeneration : MonoBehaviour
           _terrainChunkDictionary[viewedChunkCoordinate].UpdateTerrainChunk();
           if(_terrainChunkDictionary[viewedChunkCoordinate].IsVisible()){_terrainChunksVisibleLastUpdate.Add(_terrainChunkDictionary[viewedChunkCoordinate]);}
         } else {
-          _terrainChunkDictionary.Add(viewedChunkCoordinate, new TerrainChunk(viewedChunkCoordinate, chunkSize));
+          _terrainChunkDictionary.Add(viewedChunkCoordinate, new TerrainChunk(viewedChunkCoordinate, chunkSize, transform));
         }
       }
     }
@@ -63,7 +63,7 @@ public class EndlessGeneration : MonoBehaviour
     Vector2 position;
     Bounds bounds; 
     
-    public TerrainChunk(Vector2 coordinate, int size)
+    public TerrainChunk(Vector2 coordinate, int size, Transform parent)
     {
       position = coordinate * size;
       bounds = new Bounds(position, Vector2.one * size); 
@@ -72,6 +72,7 @@ public class EndlessGeneration : MonoBehaviour
       meshObject = GameObject.CreatePrimitive(PrimitiveType.Plane);
       meshObject.transform.position = positionV3;
       meshObject.transform.localScale = Vector3.one * size / 10f;
+      meshObject.transform.parent = parent; 
       
       SetVisible(false);
     }
