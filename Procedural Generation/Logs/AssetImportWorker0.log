@@ -15,11 +15,11 @@ G:/Games/my game/TestProject/Procedural Generation
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54055
+51659
 Successfully changed project path to: G:/Games/my game/TestProject/Procedural Generation
 G:/Games/my game/TestProject/Procedural Generation
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 89.46 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 149.26 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path G:/Unityy/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -36,5 +36,5 @@ Initialize mono
 Mono path[0] = 'G:/Unityy/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'G:/Unityy/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'G:/Unityy/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56604
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56160
 Begin MonoManager ReloadAssembly
